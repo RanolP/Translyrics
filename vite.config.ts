@@ -5,6 +5,7 @@ import ssr from 'vite-plugin-ssr/plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/translyrics/',
   plugins: [
     preact(),
     linaria(),
