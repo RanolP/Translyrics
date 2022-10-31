@@ -1,14 +1,14 @@
 import { PageContextProvider } from './usePageContext.js';
 import type { PageContext } from './types.js';
 import { Link } from './Link.js';
-import { ComponentChildren } from 'preact';
 import '../styles/reset.js';
+import { ReactNode } from 'react';
 
 export function PageShell({
   children,
   pageContext,
 }: {
-  children: ComponentChildren;
+  children: ReactNode;
   pageContext: PageContext;
 }) {
   return (
@@ -28,7 +28,7 @@ export function PageShell({
   );
 }
 
-function Layout({ children }: { children: ComponentChildren }) {
+function Layout({ children }: { children: ReactNode }) {
   return (
     <div
       style={{
@@ -42,7 +42,7 @@ function Layout({ children }: { children: ComponentChildren }) {
   );
 }
 
-function Sidebar({ children }: { children: ComponentChildren }) {
+function Sidebar({ children }: { children: ReactNode }) {
   return (
     <div
       style={{
@@ -59,7 +59,7 @@ function Sidebar({ children }: { children: ComponentChildren }) {
   );
 }
 
-function Content({ children }: { children: ComponentChildren }) {
+function Content({ children }: { children: ReactNode }) {
   return (
     <div
       style={{

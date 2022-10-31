@@ -1,10 +1,9 @@
-import { Kan } from './kan.js';
-import { Language } from './language.js';
 import { Representation } from './representation.js';
+import { KanmalRow } from './row.js';
 
-export type KanmalKanGroup = {
-  [repr in Representation]: {
-    language: Language;
-    kanList: Kan[];
-  };
-};
+export interface KanmalKanGroup
+  extends Partial<{
+    readonly [repr in Representation]: KanmalRow;
+  }> {
+  readonly id: string;
+}

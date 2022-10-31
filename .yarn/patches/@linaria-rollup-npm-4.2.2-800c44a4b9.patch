@@ -1,0 +1,30 @@
+diff --git a/dist/index.js b/dist/index.js
+index db598f991a431ea4ce69288115c9c0b41882e671..6a54d20310ed20bed426673b93869b37fc472293 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -100,8 +100,10 @@ function linaria({
+         cssText += `/*# sourceMappingURL=data:application/json;base64,${map}*/`;
+       }
+       cssLookup[filename] = cssText;
++      cssLookup[filename + '?direct'] = cssText;
+       if ((config == null ? void 0 : config.command) === "serve" && (config == null ? void 0 : config.root)) {
+         cssLookup[`/${import_path.default.posix.relative(config.root, filename)}`] = cssText;
++        cssLookup[`/${import_path.default.posix.relative(config.root, filename)}?direct`] = cssText;
+       }
+       result.code += `
+ import ${JSON.stringify(filename)};
+diff --git a/dist/index.mjs b/dist/index.mjs
+index f55d8f5ae763601ca15749363afabfb4ad176925..103bb25e8461b3fa94fa2f8fb4cecb21baaefe72 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -70,8 +70,10 @@ function linaria({
+         cssText += `/*# sourceMappingURL=data:application/json;base64,${map}*/`;
+       }
+       cssLookup[filename] = cssText;
++      cssLookup[filename + '?direct'] = cssText;
+       if ((config == null ? void 0 : config.command) === "serve" && (config == null ? void 0 : config.root)) {
+         cssLookup[`/${path.posix.relative(config.root, filename)}`] = cssText;
++        cssLookup[`/${path.posix.relative(config.root, filename)}?direct`] = cssText;
+       }
+       result.code += `
+ import ${JSON.stringify(filename)};

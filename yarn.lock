@@ -1467,7 +1467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/rollup@npm:^4.2.2":
+"@linaria/rollup@npm:4.2.2":
   version: 4.2.2
   resolution: "@linaria/rollup@npm:4.2.2"
   dependencies:
@@ -1476,6 +1476,18 @@ __metadata:
     "@linaria/utils": "npm:^4.2.4"
     "@rollup/pluginutils": "npm:^4.1.0"
   checksum: b6e8c16537ab66eba5e8bf8a080343130694dc49786de40c942199d806c11b4d29b0e6c8cf9e48af2857b10e0e05b4674561b3b7619bfbbc220bafd89e66e8c5
+  languageName: node
+  linkType: hard
+
+"@linaria/rollup@patch:@linaria/rollup@npm%3A4.2.2#~/.yarn/patches/@linaria-rollup-npm-4.2.2-800c44a4b9.patch":
+  version: 4.2.2
+  resolution: "@linaria/rollup@patch:@linaria/rollup@npm%3A4.2.2#~/.yarn/patches/@linaria-rollup-npm-4.2.2-800c44a4b9.patch::version=4.2.2&hash=dbf975"
+  dependencies:
+    "@linaria/babel-preset": "npm:^4.3.0"
+    "@linaria/logger": "npm:^4.0.0"
+    "@linaria/utils": "npm:^4.2.4"
+    "@rollup/pluginutils": "npm:^4.1.0"
+  checksum: 4546c4552eee6e2460b9333f27a954b9888948a79a4642fc99975e947ad911a9b596744ac6af4c478c8c0f165a20c683833dc2a06bc8a78af4fe19e4e6dd9713
   languageName: node
   linkType: hard
 
@@ -1661,6 +1673,38 @@ __metadata:
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: d9f7f2130a0a2e1ea50f3bc90b83a8b99c913bbb80d7a1706f7f4730292ef299d18443c3b57a42dfb17c6559c9085e13f751b1b6c969bcff7bee3eeaf9da4dec
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.8":
+  version: 18.11.8
+  resolution: "@types/node@npm:18.11.8"
+  checksum: 46527a04b97610751efcefffe33e4b1b8428855c9b95a4efd225299730409990631296cfc4a5d67ae32741274ab686dbf76cdf5eb201c9476833250bb9d9b60e
+  languageName: node
+  linkType: hard
+
+"@types/prop-types@npm:*":
+  version: 15.7.5
+  resolution: "@types/prop-types@npm:15.7.5"
+  checksum: a6e04a01e1f632cc3fa5fffd79779f2f83a8fec1293cdf29b5a02aa4e1a1b38a124e824205a40de4e66532a0fa33c4f60337b55cec635080ea2571e55910460f
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.0.24":
+  version: 18.0.24
+  resolution: "@types/react@npm:18.0.24"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    "@types/scheduler": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 4ef5bc8353a28fe7343bc429b91cf7d72e26fea49868ac5f874b963c928fa29806b853bb1bf25d857043fe46edd88846a76138faa47111727caee4428e8529f0
+  languageName: node
+  linkType: hard
+
+"@types/scheduler@npm:*":
+  version: 0.16.2
+  resolution: "@types/scheduler@npm:0.16.2"
+  checksum: 223d9b12d1eff3fe857e7eb967d640707c2a76ba1126633bae88dce7693301ea8edcce83586a17134a1822f01265f715809860085547b01db8de6a90f5165706
   languageName: node
   linkType: hard
 
@@ -2028,6 +2072,13 @@ __metadata:
     js-yaml: "npm:^3.13.1"
     parse-json: "npm:^4.0.0"
   checksum: dd54203352063aef228f9f2ee0dbf60fc4ec3371fac6a8afd21cc76e475f0790ba3638c8e12730d9127c18c4c63643d438dbe6e571ed84861d88962950eefd63
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.2":
+  version: 3.1.1
+  resolution: "csstype@npm:3.1.1"
+  checksum: 39c4533f337cad38b9574a24b4b94bb203f091882295b6b4fb27e9e2b17148b188847f5fb728796af60bd0b80c502d510f89fe7ada3b661eaa6bca758c902036
   languageName: node
   linkType: hard
 
@@ -3011,6 +3062,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "nanoid@npm:4.0.0"
+  bin:
+    nanoid: bin/nanoid.js
+  checksum: b6263a2a2425999b5aecabd18b25442ae4ef13048b2809ff173e0b0066f376b6fb2605d423763d1d26512cb095e71beee3d8b927f984603e05e169e171d8f6f0
+  languageName: node
+  linkType: hard
+
 "negotiator@npm:^0.6.3":
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
@@ -3224,6 +3284,15 @@ __metadata:
   dependencies:
     html-element-attributes: "npm:^1.0.0"
   checksum: 52ebd8278131b56862e3828d52e12da6a3fa66a66fe3028c7ccbff311f0696b5509a90e2e9bb2631f6d5da3a6c4f20a20a0fd170129bae9f95cdee55ca61a9b5
+  languageName: node
+  linkType: hard
+
+"react@npm:@preact/compat@latest":
+  version: 17.1.2
+  resolution: "@preact/compat@npm:17.1.2"
+  peerDependencies:
+    preact: "*"
+  checksum: 385e6af7d30aad57609f0e844012716cb2511020c32f59edb0b9fe5c1ce7b1cff399686985fbb9094785929144044078d9c02b2997867167ceb45a13a9cb6316
   languageName: node
   linkType: hard
 
@@ -3601,12 +3670,16 @@ __metadata:
     "@babel/plugin-transform-react-jsx-development": "npm:^7.18.6"
     "@linaria/core": "npm:^4.2.2"
     "@linaria/react": "npm:^4.3.0"
-    "@linaria/rollup": "npm:^4.2.2"
+    "@linaria/rollup": "patch:@linaria/rollup@npm%3A4.2.2#~/.yarn/patches/@linaria-rollup-npm-4.2.2-800c44a4b9.patch"
     "@preact/preset-vite": "npm:^2.4.0"
     "@preact/signals": "npm:^1.1.2"
+    "@types/node": "npm:^18.11.8"
+    "@types/react": "npm:^18.0.24"
     babel-plugin-transform-hook-names: "npm:^1.0.2"
+    nanoid: "npm:^4.0.0"
     preact: "npm:^10.11.2"
     preact-render-to-string: "npm:^5.2.6"
+    react: "npm:@preact/compat@latest"
     typescript: "npm:^4.6.4"
     vite: "npm:^3.2.0"
     vite-plugin-ssr: "npm:^0.4.43"

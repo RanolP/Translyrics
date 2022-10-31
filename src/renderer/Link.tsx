@@ -1,10 +1,10 @@
-import { ComponentChildren } from 'preact';
+import { ReactNode } from 'react';
 import { usePageContext } from './usePageContext.js';
 
 export function Link(props: {
   href: string;
   className?: string;
-  children: ComponentChildren;
+  children: ReactNode;
 }) {
   const pageContext = usePageContext();
   const className = [
