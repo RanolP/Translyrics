@@ -2,7 +2,7 @@ import { ComponentChildren } from 'preact';
 import { usePageContext } from './usePageContext';
 
 export function Link(props: {
-  href?: string;
+  href: string;
   className?: string;
   children: ComponentChildren;
 }) {
@@ -13,5 +13,11 @@ export function Link(props: {
   ]
     .filter(Boolean)
     .join(' ');
-  return <a {...props} className={className} />;
+  return (
+    <a
+      {...props}
+      className={className}
+      href={import.meta.env.BASE_URL + props.href.slice(1)}
+    />
+  );
 }
