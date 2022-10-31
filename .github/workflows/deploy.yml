@@ -30,11 +30,11 @@ jobs:
       - name: Build
         run: yarn build
       - name: Setup Pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'dist/client'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v1
