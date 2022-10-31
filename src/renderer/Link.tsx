@@ -1,5 +1,5 @@
 import { ComponentChildren } from 'preact';
-import { usePageContext } from './usePageContext';
+import { usePageContext } from './usePageContext.js';
 
 export function Link(props: {
   href: string;
