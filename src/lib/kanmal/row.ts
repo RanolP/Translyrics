@@ -5,4 +5,5 @@ export interface KanmalRow {
   readonly id: string;
   readonly language: Language;
   readonly kanList: KanmalKan[];
+  readonly small?: true;
 }
